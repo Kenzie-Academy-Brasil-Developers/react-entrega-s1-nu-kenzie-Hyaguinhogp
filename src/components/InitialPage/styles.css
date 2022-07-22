@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+h2, h3 {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+}
+
+.initial-page__container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #212529;
+    font-weight: 800;
+}
+
+.initial-page__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.initial-page__image {
+    width: 100%;
+    height: 400px;
+}
+
+.initial-page__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+    padding: 0 20px;
+}
+
+.initial-page__logo {
+    font-size: 30px;
+}
+
+.pink {
+    color: #FD377E;
+}
+
+.initial-page__info {
+    font-size: 38px;
+}
+
+.initial-page__p {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+.initial-page__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: #FD377E;
+    color: white;
+    border: 0;
+    border-radius: 8px;
+}
+
+@media (min-width: 500px) {
+    .initial-page__text {
+        width: 500px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .initial-page__container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .initial-page__card {
+        flex-direction: row-reverse;
+    }
+
+    .initial-page__image {
+        height: 70%;
+    }
+}

@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+h2 {
+    font-family: 'Nunito', sans-serif;
+}
+
+.transaction-card {
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    margin-bottom: 15px;
+    background-color: #F8F9FA;
+    border-radius: 4px;
+}
+
+.Entrada {
+    border-left: 4px solid #03B898;
+}
+
+.Despesa {
+    border-left: 4px solid #E9ECEF;
+}
+
+.transaction-card__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 14px;
+}
+
+.transaction-card__description {
+    font-weight: 800;
+    color: black;
+}
+
+.transaction-card__value-type {
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    color: black;
+}
+
+.transaction-card__right {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin: 15px;
+}
+
+.transaction-card__value {
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.transaction-card__delete-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    border: 0;
+}
