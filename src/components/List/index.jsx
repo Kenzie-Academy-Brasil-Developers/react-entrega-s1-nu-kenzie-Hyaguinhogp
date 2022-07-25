@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Card from '../Card';
+import EmptyList from '../EmptyList';
 import './styles.css';
 
 const List = ({ listTransactions, setListTransactions }) => {
@@ -55,9 +56,12 @@ const List = ({ listTransactions, setListTransactions }) => {
 
                 <ul id='list-transactions'>
                     {
-                        listTransactions.map((transaction, id) => {
-                            return <Card transaction={transaction} setListTransactions={setListTransactions} actualFilter={actualFilter} key={id} />
-                        })
+                        listTransactions.length > 0 ?
+                            listTransactions.map((transaction, id) => {
+                                return <Card transaction={transaction} setListTransactions={setListTransactions} actualFilter={actualFilter} key={id} />
+                            })
+                        :
+                            (<EmptyList />)
                     }
                 </ul>
             </div>

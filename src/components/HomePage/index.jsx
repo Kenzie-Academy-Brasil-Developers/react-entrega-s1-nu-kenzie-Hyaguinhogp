@@ -7,7 +7,10 @@ import './styles.css';
 
 const HomePage = ({ setIsLoggedIn }) => {
 
-    const [ listTransactions, setListTransactions] = useState([]);
+    const [ listTransactions, setListTransactions] = useState([
+        { description: "Salário recebido", typeValue: "Entrada", value: 2500 },
+        { description: "Conta de luz", typeValue: "Despesa", value: 150 }
+    ]);
 
     return (
         <div className='home-page__container'>
